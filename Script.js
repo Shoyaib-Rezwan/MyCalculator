@@ -16,6 +16,8 @@ function buttonClicked(e) {
       else str = str.slice(0, str.length - 1)
     } else if (e.className == "=") {
       str = evaluate(str)
+    } else if (e.className == "1/x") {
+      str = String(1 / parseFloat(str))
     } else {
       if (str == "0") str = ""
       str += className
