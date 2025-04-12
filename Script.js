@@ -30,8 +30,7 @@ function buttonClicked(e) {
 function buttonPressed(e) {
   if (e.key == "=") {
     str = evaluate(str)
-  }
-  if (e.key == "Delete") {
+  } else if (e.key == "Delete") {
     str = "0"
   } else if (e.key == "Backspace") {
     if (str.length == 1) str = "0"
